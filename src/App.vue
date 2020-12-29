@@ -8,6 +8,14 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Component } from "vue-property-decorator"
+Component.registerHooks([
+  "beforeRouteEnter",
+  "beforeRouteLeave"
+])
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
